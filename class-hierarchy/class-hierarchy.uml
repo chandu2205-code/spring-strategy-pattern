@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>C:/Users/allenkis/IdeaProjects/spring-strategy-design-pattern/src/main/java/org/sdp</OriginalElement>
+  <nodes>
+    <node x="124.00416666666663" y="162.0">org.sdp.test.Test</node>
+    <node x="27.833333333333343" y="0.0">org.sdp.beans.IMessageWriter</node>
+    <node x="389.0" y="81.0">org.sdp.beans.PDFMessageWriter</node>
+    <node x="179.0" y="81.0">org.sdp.beans.HTMLMessageWriter</node>
+    <node x="0.0" y="81.0">org.sdp.beans.MessageDisplay</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.sdp.test.Test" target="org.sdp.beans.HTMLMessageWriter" relationship="DEPENDENCY">
+      <point x="19.75" y="-15.5" />
+      <point x="183.25416666666663" y="137.0" />
+      <point x="274.0" y="137.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.sdp.beans.MessageDisplay" target="org.sdp.beans.IMessageWriter" relationship="DEPENDENCY">
+      <point x="39.75" y="-15.5" />
+      <point x="119.25" y="61.0" />
+      <point x="105.33333333333334" y="61.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.sdp.beans.MessageDisplay" target="org.sdp.beans.IMessageWriter" relationship="TO_ONE">
+      <point x="-39.75" y="-15.5" />
+      <point x="39.75" y="61.0" />
+      <point x="53.66666666666666" y="61.0" />
+      <point x="-51.666666666666686" y="15.5" />
+    </edge>
+    <edge source="org.sdp.beans.HTMLMessageWriter" target="org.sdp.beans.IMessageWriter" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="274.0" y="61.0" />
+      <point x="362.5041666666666" y="61.0" />
+      <point x="362.5041666666666" y="51.0" />
+      <point x="157.00000000000003" y="51.0" />
+      <point x="51.666666666666686" y="15.5" />
+    </edge>
+    <edge source="org.sdp.beans.PDFMessageWriter" target="org.sdp.beans.IMessageWriter" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="477.5" y="61.0" />
+      <point x="362.5041666666666" y="61.0" />
+      <point x="362.5041666666666" y="51.0" />
+      <point x="157.00000000000003" y="51.0" />
+      <point x="51.666666666666686" y="15.5" />
+    </edge>
+    <edge source="org.sdp.test.Test" target="org.sdp.beans.MessageDisplay" relationship="DEPENDENCY">
+      <point x="-19.75" y="-15.5" />
+      <point x="143.75416666666663" y="137.0" />
+      <point x="79.5" y="137.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="283.0" y="96.5" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
